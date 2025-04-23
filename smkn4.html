@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SMKN 4 Kota Bengkulu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+    }
+    .musik-player {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#btnMusik {
+  background-color: #004080;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#btnMusik:hover {
+  background-color: #0066cc;
+}
+.hero {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7WUqZ1nkfH7D186RIJavAyY6p56y2d41b2Q&s');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.visi-misi {
+  background-color: #f0f8ff;
+  padding: 40px 20px;
+  margin-top: 40px;
+  border-radius: 12px;
+}
+
+.visi-misi h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #004080;
+}
+
+.visi, .misi {
+  margin-bottom: 20px;
+}
+
+.visi h3, .misi h3 {
+  color: #004080;
+  font-size: 24px;
+}
+
+.misi ul {
+  padding-left: 20px;
+}
+
+.misi li {
+  margin-bottom: 10px;
+}
+
+
+
+    .container {
+      padding: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .maps {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.maps h2 {
+  color: #004080;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.maps p {
+  font-size: 16px;
+}
+
+    .about {
+      background-color: #f3f3f3;
+      padding: 30px;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+
+    footer {
+      background-color: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .contact {
+      margin-top: 20px;
+    }
+
+    .contact a {
+      color: #1da1f2;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <img src="logo.png" alt="Logo Sekolah">
+  </div>
+  <nav>
+    <a href="#tentang">Tentang</a>
+    <a href="#kegiatan">Kegiatan</a>
+    <a href="#lokasi">Lokasi</a>
+  </nav>
+</header>
+
+<div class="musik-player">
+    <button onclick="playMusik()" id="btnMusik">🎵 Putar Musik</button>
+  </div>
+<section class="hero">
+    <div class="overlay">
+      <h1>SMKN 4 KOTA BENGKULU</h1>
+      <p>Tempat Berkarya dan Menata Masa Depan</p>
+    </div>
+</section>
+  
+  
+
+<div class="container">
+  <section id="tentang" class="about">
+    <h2>Tentang SMKN 4 Kota Bengkulu</h2>
+    <p>
+      Di sudut barat Pulau Sumatra, berdiri sebuah sekolah kejuruan yang penuh semangat: <strong>SMKN 4 Kota Bengkulu</strong>. Sekolah ini bukan hanya tempat belajar, tapi juga rumah kedua bagi ratusan siswa yang ingin menata masa depan lewat keterampilan dan pengetahuan.
+    </p>
+    <p>
+      Dengan berbagai jurusan seperti <em>Teknik Komputer dan Jaringan</em>, <em>Desain Komunikasi Visual</em>, <em>Akuntansi</em>, hingga <em>Tata Busana</em>, SMKN 4 membentuk insan yang siap kerja dan berjiwa kreatif.
+    </p>
+    <p>
+      Sekolah ini juga menanamkan nilai-nilai gotong royong, disiplin, dan nasionalisme lewat kegiatan ekstrakurikuler yang aktif. Didukung oleh guru-guru berdedikasi dan lingkungan belajar yang nyaman, SMKN 4 terus melangkah mantap menuju masa depan yang cerah.
+    </p>
+  </section>
+
+  <section class="visi-misi">
+    <h2>Visi & Misi</h2>
+    <div class="visi">
+      <h3>Visi</h3>
+      <p>
+        Menjadi sekolah menengah kejuruan yang unggul, profesional, dan kompeten dalam mencetak sumber daya manusia yang berkarakter dan siap bersaing di tingkat nasional maupun global.
+      </p>
+    </div>
+  
+    <div class="misi">
+      <h3>Misi</h3>
+      <ul>
+        <li>Menyelenggarakan pendidikan berbasis kompetensi keahlian sesuai kebutuhan dunia kerja dan industri.</li>
+        <li>Meningkatkan mutu dan profesionalisme pendidik dan tenaga kependidikan.</li>
+        <li>Menanamkan nilai-nilai karakter, kedisiplinan, dan tanggung jawab dalam setiap kegiatan belajar mengajar.</li>
+        <li>Menjalin kerjasama dengan dunia usaha dan dunia industri (DUDI).</li>
+        <li>Mendorong siswa untuk berwirausaha dan menciptakan lapangan kerja sendiri.</li>
+      </ul>
+    </div>
+  </section>
+  
+
+  <h2 id="kegiatan">Foto Kegiatan Sekolah</h2>
+  <div class="gallery">
+    <img src="ft1.jpg" alt="Kegiatan 1">
+    <img src="ft2.jpg" alt="Kegiatan 2">
+    <img src="ft3.jpg" alt="Kegiatan 3">
+    <img src="ft4.jpg" alt="Kegiatan 4">
+  </div>
+
+  <div class="maps" id="lokasi">
+    <h2>Lokasi SMKN 4 Kota Bengkulu</h2>
+    <p><em>Alamat: Jl.enggano, pasar bengkulu ,kec sungai serut,Kota bengkulu</em></p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15950.984728033242!2d102.2661997!3d-3.8224366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e36b0712c268f3f%3A0xc7ccab8fc3c7c416!2sSMKN%204%20Kota%20Bengkulu!5e0!3m2!1sid!2sid!4v1713879350456"
+      width="100%"
+      height="350"
+      style="border:0; border-radius: 10px;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <p><a href="https://goo.gl/maps/VmEM3ybUnrcfn9Yd6" target="_blank">Lihat di Google Maps</a></p>
+  </div>
+  
+<footer>
+  &copy; 2025 SMKN 4 Kota Bengkulu. Hak Cipta Dilindungi.
+  <div class="contact">
+    <p>Kontak Kami:</p>
+    <a href="mailto:smkn4bkl@email.com">Email</a> |
+    <a href="https://instagram.com/smkn4bengkulu" target="_blank">Instagram</a> |
+    <a href="https://facebook.com/smkn4bengkulu" target="_blank">Facebook</a> |
+    <a href="https://twitter.com/smkn4bkl" target="_blank">Twitter</a>
+  </div>
+</footer>
+
+<audio id="musikSekolah" src="Lirik Mars SMK Bisa SMK Hebat-yt.savetube.me.mp3" preload="auto"></audio>
+<button onclick="document.getElementById('musikSekolah').play()">Putar Musik</button>
+
+<script>
+    function playMusik() {
+      const audio = document.getElementById('musikSekolah');
+      audio.play().then(() => {
+        console.log("Musik diputar.");
+      }).catch(e => {
+        alert("Browser tidak mengizinkan autoplay otomatis. Silakan klik lagi atau cek pengaturan.");
+      });
+    }
+  </script>
+  
+
+</body>
+</html>
